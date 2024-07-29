@@ -22,7 +22,7 @@ def app():
         st.warning("The payments or economic obligations will be as electronic transfer between partners accounts and our international accounts")
     
     st.header("Tools for premium members")
-    col1,col2,col3 = st.columns(3)
+    col1,col2,col3,col4 = st.columns(4)
     with col1:
         # Display the PDF file
         pdf_file_path = 'Notion_course.pdf'
@@ -40,6 +40,18 @@ def app():
         url_task_manager = "https://taskforge.streamlit.app/"
         if st.button('Task managing app'):
             st.markdown(f"[Click here to show the app]({url_task_manager})")
+
+    with col4:
+        whatsapp_number = "+5930993513082"
+        whatsapp_message = "I have a possible customer in premium"
+        whatsapp_url = f"https://api.whatsapp.com/send?phone={whatsapp_number}&text={whatsapp_message}"
+
+        if st.button("Premium whatssap Channel"):
+            st.markdown(f"""
+                <a href="{whatsapp_url}" target="_blank">
+                    <button>Premium whatssap channel</button>
+                </a>
+            """, unsafe_allow_html=True)
 
 
 # Run the app

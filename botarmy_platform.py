@@ -38,13 +38,17 @@ if st.sidebar.button("Enter as Guest"):
 
 # Formulario de Login en el sidebar, sin permitir login como guest
 if not st.session_state.authenticated:
-    st.title("Welcome to :red[BOTARMY_HUB] platform")
+    col1, col2 = st.columns([1,4])
+    with col1:
+        st.image('Botarmy_logo.png', width=100)
+    with col2:
+        st.title("Welcome to :red[BOTARMY_HUB] platform")
     st.info("We are _Botarmy_Hub_ your platform to become a profitable AI based tools development agency")
     with st.expander("Botarmy_Platform provided services"):
         st.text('''
 1. Reseller tier:
    - Access to basic tools for AI development.
-   - Basic formation resources and tutorials.
+   - Basic formation resources and tutorials to become a successful AI agency.
    - Limited technical support.
 
 2. Premium tier:

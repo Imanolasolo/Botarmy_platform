@@ -10,8 +10,9 @@ def app():
     st.info("With these resources you will be able to promote and market AI based tools and perform a profitable career as AI Agency!")
     with st.expander("Reseller work process"):
         st.markdown("The objective of the reseller platform partner is to resell AI-based virtual assistants to their contacts, whether professional or personal.")
-        st.markdown("For each paying customer brought by the basic partner, the partner will receive 50% of the price agreed with the final customer once he or she pays for the product.")
+        st.markdown("For each paying customer brought by the reseller partner, the partner will receive 50% of the price agreed with the final customer once he or she pays for the product.")
         st.markdown("This basic tier is suitable for anyone who wants to be a reseller partner and generate profit from the sale of virtual assistants based on AI, you only have to provide interested contacts, Botarmy does the rest of the work.")
+        st.markdown("Every transaction or payment relation will be agreed and comunicated via whatssap between partner and administrator")
 
     st.header("Tools for reseller tier")
 
@@ -35,10 +36,10 @@ def app():
         whatsapp_message = "I have a possible customer"
         whatsapp_url = f"https://api.whatsapp.com/send?phone={whatsapp_number}&text={whatsapp_message}"
 
-        if st.button("Customer handling message"):
+        if st.button("Reseller whatssap Channel"):
             st.markdown(f"""
                 <a href="{whatsapp_url}" target="_blank">
-                    <button>Customer handling message</button>
+                    <button>Reseller whatssap channel</button>
                 </a>
             """, unsafe_allow_html=True)
     

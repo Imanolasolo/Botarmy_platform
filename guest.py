@@ -4,10 +4,13 @@ def app():
     if st.sidebar.button('Botarmy Marketplace'):
         link = 'https://botarmy-marketplace.streamlit.app/'
         st.sidebar.markdown(f"[Marketplace]({link})", unsafe_allow_html=True)
-
-    st.title("Welcome to BOTARMY_HUB_PLATFORM")
+    col1, col2= st.columns([1,4])
+    with col1:
+        st.image('Botarmy_logo.png', width=100)
+    with col2: 
+        st.title("Welcome to BOTARMY_HUB_PLATFORM")
     st.warning("Hello, Guest! Welcome to the BOTARMY_HUB_PLATFORM.")
-    st.info("We are excited to have you here. Check our videos to know more about Botarmy_hub and how we can collaborate in this amazing opportunity for all of us!")
+    st.info("We are excited to have you here. Check our videos to know more about Botarmy_hub and how we can collaborate in this amazing opportunity for all of us and become the biggest network of AI agencies!")
 
     st.subheader("Featured Videos")
     
