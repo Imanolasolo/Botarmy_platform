@@ -1,0 +1,22 @@
+[
+    {
+        "name": "admin",
+        "password": "adminpassword",
+        "role": "admin"
+    },
+    {
+        "name": "Imanol Asolo",
+        "password": "ia160971",
+        "role": "developer"
+    },
+    {
+        "name": "Ilargi Asolo",
+        "password": "1a270209",
+        "role": "basic"
+    },
+    {
+        "name": "Violeta Moran",
+        "password": "vm070778",
+        "role": "premium"
+    }
+]
